@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн конвертация валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+        <div class="menu-bar">
+
+            <div class="brand-area">
+                <img src="logo.png" alt="logo" />
+            </div>
+
+            <div class="menu-items">
+                <a href="#" class="menu-item">БАНК</a>
+                <a href="#" class="menu-item">БИЗНЕС</a>
+                <a href="#" class="menu-item">ИНВЕСТ</a>
+                <a href="#" class="menu-item">ЗАЩИТА</a>
+                <a href="#" class="menu-item">МОБИЛЬНЫЙ</a>
+                <a href="#" class="menu-item">ПОЕЗДКИ</a>
+                <a href="#" class="menu-item">ДОСУГ</a>
+            </div>
+
+            <button class="auth-button">ВОЙТИ</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <h1 class="page-heading">Онлайн конвертер валют</h1>
+
+        <div class="exchange-wrapper">
+
+            <div class="exchange-block">
+                <span class="block-title">У меня есть</span>
+
+                <div class="currency-select">
+                    <button class="currency-option selected" data-currency="RUB">RUB</button>
+                    <button class="currency-option" data-currency="USD">USD</button>
+                    <button class="currency-option" data-currency="EUR">EUR</button>
+                    <button class="currency-option" data-currency="GBP">GBP</button>
+                </div>
+
+                <input type="text" class="value-input" id="leftAmount" value="5000">
+                <div class="rate-info" id="leftRate">1 RUB = 0.0135 USD</div>
+            </div>
+
+            <div class="exchange-block">
+                <span class="block-title">Хочу получить</span>
+
+                <div class="currency-select">
+                    <button class="currency-option" data-currency="RUB">RUB</button>
+                    <button class="currency-option selected" data-currency="USD">USD</button>
+                    <button class="currency-option" data-currency="EUR">EUR</button>
+                    <button class="currency-option" data-currency="GBP">GBP</button>
+                </div>
+
+                <input type="text" class="value-input" id="rightAmount" value="0">
+                <div class="rate-info" id="rightRate">1 USD = 73.8896 RUB</div>
+            </div>
+
+        </div>
+
+        <div class="warning-text" id="errorMessage"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
